@@ -70,6 +70,18 @@ body, h1, h2, p {
     justify-content: center;
   }
   
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
   #account-info h3 {
     font-size: 24px;
     font-weight: bold;
@@ -117,7 +129,51 @@ body, h1, h2, p {
     display: inline;
     margin-right: 20px;
   }
+
+  @media only screen and (min-width: 600px) {
+   
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
   
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+
+    #ham, .fa-magnifying-glass {
+        display: none;
+    }
+
+   
+    .flex-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+    .flex-section img {
+        width: 50%;
+    }
+
+    
+    .flex-section section {
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+  
+    .right img {
+        order: 1;
+    }
+}
   
   
 
