@@ -11,22 +11,24 @@ body, h1, h2, p {
     background-color:#fff;
   }
   
-.container{
-      
-  }
 
  .img{
-   max-width: 100;
-    height: 300px;
+    max-width: 100;
+    height: 200px;
     display:block;
 
-    
  }
+
+
+.footer-header-text{
+    color: black;
+}
+    
   header {
     background-color:beige;
     color:black;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,5 +118,10 @@ body, h1, h2, p {
     margin-right: 20px;
   }
   
+  
+  
+
+
+
  
   
