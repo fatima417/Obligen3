@@ -108,6 +108,10 @@
     font-weight: bold;
   }
   
+  #shop-now-or-sale{
+    height:fit-content;
+    
+  }
   
   #account-nav {
     display: flex;
