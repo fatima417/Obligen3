@@ -11,31 +11,26 @@
         <title>Produktside</title>
     </head>
     <body>
-        <div id="grid-container">
-            <header>
-                <a href="index.html">Level shoes</a>
-                <div class="navbar">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html" class="footer-header-text">Hjem</a></li>
-                            <li><a href="produkt.html" class="footer-header-text">Menn</a></li>
-                            <li><a href="product.html" class="footer-header-text">Women</a></li>
-                            <li><a href="leveranseside.html" class="footer-header-text">my page</a></li>
-                        </ul>
-                    </nav>
-                    <nav id="icons">
-                        <div class="container">
-                            <i class="fa-solid fa-heart"></i> 
-                            <i class="fa-solid fa-user"></i>  
-                            <i class="fa-solid fa-cart-shopping"></i> 
-                        </div>
-                    </nav>
-                    <nav id="search_bar"> 
-                        <input type="text" placeholder="search"> 
-                    </nav>
-                </div>
-         </header>
-         <main class="grid-container">
+        <header>
+         <h1 class="logo"><a href="index.html">Level shoes</a></h1>
+         <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menn</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">My page</a></li>
+            </ul>
+         </nav>
+            <div class="container">
+                <i class="fa-solid fa-heart"></i> 
+                <i class="fa-solid fa-user"></i>  
+                <i class="fa-solid fa-cart-shopping"></i> 
+            </div>
+        <nav id="search_bar"> 
+            <input type="text" placeholder="search"> 
+        </nav>
+        </header>
+         <main>
             <h2>Produkter</h2>
             <div class="product-grid">
                 <div class="product-item">
@@ -43,29 +38,31 @@
                     <p>NOK 1,649</p>
                     <img src="https://placehold.co/600x400" alt="placeholder bilde">
                 </div>
-               <section>
+               <section class="product-pics">
                     <p>NIKE DUNK HIGH</p>
                     <p>NOK 1,499</p>
                     <img src="https://placehold.co/600x400" alt="placeholder bilde">
                 </section>
             
-                <section>
+                <section class="product-pics">
                     <p>Nike SB Dunk Low Pro Premium</p>
                     <p>NOK 1,399</p>
                     <img src="https://placehold.co/600x400" alt="placeholder bilde">
                 </section>
-
+               
+                <section class="product-pics">
                     <p>Adidas ADILETTE 22 UNISEX</p>
                     <p>NOK 499</p>
                     <img src="https://placehold.co/600x400" alt="placeholder bilde">
+                </section>
 
-                <section>
+                <section class="product-pics">
                     <p>Enzo 2 training shoes</p>
                     <p>NOK 459</p>
                     <img src="https://placehold.co/600x400" alt="placeholder bilde">
                 </section>
 
-                <section>
+                <section class="product-pics">
                     <p>Converse chuck tayler</p>
                     <p>NOK 989</p>
                     <img src="https://placehold.co/600x400" alt="placeholder bilde">
@@ -73,16 +70,16 @@
             </div>
             </main>
             <footer class="footer">
-                <nav>
-                    <h2>Information about our page</h2>
-                    <ul>
-                        <li><a href="#" class="footer-header-text">Customer service</a></li>
-                        <li><a href="#" class="footer-header-text">About us</a></li>
-                    </ul>
-                </nav>
-                <ul id="social-icons">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">facebook</a></li>
+                <ul class="footer">
+                    <li>
+                        <a href="#">About us</a>
+                        <a href="#">Customer service</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-socials">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
                 </ul>
             </footer>
         </div>
