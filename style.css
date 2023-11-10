@@ -35,6 +35,12 @@
     width: 55px;
 }
 
+ #grid-container{
+   display: grid;
+   margin: 0px;
+   justify-content: left;
+ 
+ }
   header {
     background-color:beige;
     color:black;
@@ -141,13 +147,12 @@
     margin-right: 20px;
   }
 
-  @media only screen and (min-width: 600px) {
-   
-    #grid-container {
-        grid-template-areas: "header header header" "main main main" "footer footer footer";
+  @media (min-width: 500px) {
+    main.grid-container {
+        grid-template-columns: 1fr;
     }
-
-  
+  }
+   
     .navbar {
         display: flex;
         flex-direction: row;
@@ -155,13 +160,6 @@
         list-style: none;
         margin: 0;
     }
-
-
-    #ham, .fa-magnifying-glass {
-        display: none;
-    }
-
-   
     .flex-section {
         display: flex;
         flex-direction: row;
@@ -184,7 +182,7 @@
     .right img {
         order: 1;
     }
-}
+
   
   
 
