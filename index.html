@@ -4,85 +4,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <link href="css/font/css/fontawesome.css" rel="stylesheet">
-        <link href="css/font/css/brands.css" rel="stylesheet">
-        <link href="css/font/css/solid.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/f0cec0541e.js" crossorigin="anonymous"></script>
-        <style media="all" id="fa-v4-font-face"></style>
-        <style media="all" id="fa-v5-font-face"></style>
-        <style media="all" id="fa-v4-shims"></style>
-        <style media="all" id="fa-v4-main"></style>
         <title>Forside</title>
- </head>
- <body>
-    <div id="grid-container">
-        <header>
-            <h1 class="logo"><a href="index.html">Level shoes</a></h1>
-          <nav>
-             <ul>
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="produkt.html">Menn</a></li>
-                 <li><a href="produkt.html">Women</a></li>
-                 <li><a href="leveranseside.html">My page</a></li>
-             </ul>
-         </nav>
-            <div class="container">
-                <i class="fa-solid fa-heart"></i> 
-                <i class="fa-solid fa-user"></i>  
-                <i class="fa-solid fa-cart-shopping"></i> 
-            </div>
-         <nav id="search_bar"> 
-             <input type="text" placeholder="search"> 
-         </nav>
-        </header>
-        <main>
-            <section class="intro">
-             <h2 class="shipping-title">Free shipping on orders over 1000kr <i class="fa-solid fa-truck-fast"></i></h2>  
-            </section>
-            <section class="banner" onclick="window.location.href='produkt.html';">
-                <button id="button-sale-shop-now">
-                  <span>
-                    <span>SALE!</span>
-                    <span>SHOP NOW!</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </span>
-                </button>
-            </section>
-            <section class="flex-sb">
-                <article>
-                   <img src="css/img/54448fdfe921670193384716a3f7b6eebeacd0e1-1080x720.jpg" alt="new balance">
-                   <p class="text-design">NEW BALANCE 550</p>
-                   <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a hendrerit justo, at commodo orci. Sed sit amet purus quis ante tristique consequat et vitae erat. Curabitur id velit quis ligula dapibus facilisis. Integer ut dolor mauris. </p>
-                </article>
-                <article>
-                   <img src="css/img/image.jpg" alt="nike dunk low">
-                   <p class="text-design">NIKE DUNKS LIGHT BLUE</p>
-                   <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a hendrerit justo, at commodo orci. Sed sit amet purus quis ante tristique consequat et vitae erat. Curabitur id velit quis ligula dapibus facilisis. Integer ut dolor mauris. </p>
-                </article>
-            </section>
-            <section class="shop-after-category">
-                 <h3>SHOP AFTER CATEGORY</h3>
-           </section>
-           <section class="pics-category">
-               <img src="css/img/category_logo_1667025065.jpg" alt="women in the picture">
-               <p class="category-text">WOMEN</p>
-               <img src="css/img/22-03-22_M_OF_V02_0229_2x3-1-scaled.jpeg" alt="men in the picture">
-               <p>MEN</p>
-           </section>
-           <footer class="footer-header">
-               <ul>
-                  <li>
-                     <i class="fa-solid fa-plus"> ABOUT US</i>
-                     <i class="fa-solid fa-plus"> Customer service</i>             
-                   </li>
-               </ul>
-                    <ul class="footer-socials">
-                      <li><i class="fa-solid fa-arrow-down"></i></li>
-                      <li><a href="https://www.instagram.com/"> Instagram</a></li>
-                      <li><a href="https://www.facebook.com/"> Facebook</a></li>
-                   </ul>
-           </footer>
-      </main>
-    </div>
-  </body>
- </html>   
+    </head>
+    <body>
+        <div id="grid-container">
+            <header>
+                <nav class="flex">
+                    <a id="logo" href="index.html">LEVEL SHOES</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produkt.html">Menn</a></li>
+                        <li><a href="produkt.html">Women</a></li>
+                        <li><a href="leveranseside.html">My page</a></li>
+                    </ul>
+                </nav>
+                <section class="flex">
+                    <h2 id="free-shipping">Free shipping on orders over 1000kr<i class="fa-solid fa-truck-fast"></i></h2>  
+                </section>
+            </header>
+            <main>
+                <h1 class="main-titles">Level shoes</h1>
+                <section class="flex">
+                    <button class="button" onclick="window.location.href='produkt.html';">SALE! SHOP NOW!</button>
+                </section>
+                <section class="flex">
+                    <h3 class="sub-titles">NEW BALANCE 550</h3>
+                        <img class="img" src="css/img/54448fdfe921670193384716a3f7b6eebeacd0e1-1080x720.jpg" alt="new balance">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a hendrerit justo, at commodo orci. Sed sit amet purus quis ante tristique consequat et vitae erat. Curabitur id velit quis ligula dapibus facilisis. Integer ut dolor mauris.</p>
+                    <h3 class="sub-titles">NIKE</h3>
+                        <img class="img" src="css/img/image.jpg" alt="nike dunk low">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a hendrerit justo, at commodo orci. Sed sit amet purus quis ante tristique consequat et vitae erat. Curabitur id velit quis ligula dapibus facilisis. Integer ut dolor mauris.</p>
+                </section>
+                <section class="flex">
+                    <h2>SHOP AFTER CATEGORY</h2>
+                        <h3 class="sub-titles">WOMEN</h3>
+                            <img class="img" src="css/img/category_logo_1667025065.jpg" alt="women in the picture">
+                        <h3 class="sub-titles">MEN</h3>
+                            <img class="img" src="css/img/22-03-22_M_OF_V02_0229_2x3-1-scaled.jpeg" alt="men in the picture">
+                </section>
+            </main>
+            <footer>
+                <section class="flex">
+                    <article>
+                        <h3>ABOUT US</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a hendrerit justo, at commodo orci. Sed sit amet purus quis ante tristique consequat et vitae erat. Curabitur id velit quis ligula dapibus facilisis. Integer ut dolor mauris.</p>
+                    </article>
+                    <article>
+                        <h3>CUSTOMER SERVICE</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a hendrerit justo, at commodo orci. Sed sit amet purus quis ante tristique consequat et vitae erat. Curabitur id velit quis ligula dapibus facilisis. Integer ut dolor mauris.</p>
+                    </article>
+                    <article>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </article>
+                </section>
+             </footer>
+        </div>
+    </body>
+</html>

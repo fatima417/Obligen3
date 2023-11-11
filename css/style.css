@@ -7,266 +7,106 @@
   display: grid;
   grid-template-areas: "header" "main" "footer";
 }
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color:#fff;
 }
 
-.logo a{
-  text-decoration: none;
-  color: black;
-}
-
-
 header{
   background-color: grey;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-#search_bar{
-  margin-top: 10px;
-  text-align: center;
-}
-
-#search_bar input {
-  padding: 8px;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.container{
-text-align: left;
-font-size: 30px;
-display: flex;
-flex-direction: column;
-font-size: 22px;
-flex-flow: row wrap;
-justify-content: space-between;
-align-items: baseline;
-flex-basis: 50%;
-margin: 1rem auto;
-text-align: center;
-width: 15%;
-}
-
-.shipping-title{
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 24px;
-  text-align: center;
-  margin: 20px 0;
-  text-decoration:solid;
-}
-
-nav{
-margin-top: 10px;
-}
-
-nav ul{
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
-justify-content: space-around;
-}
-
-nav li {
-  margin: 0 15px;
-}
-
-nav a{
-  color:black;
-  padding: 1.5em;
-  width: 45%;
-  text-decoration: solid;
-  text-transform: uppercase;
-  text-shadow: #fff;
-  text-decoration-line: underline;
-  font-style: inherit;
-}
-
-nav a:hover,
-nav a:focus { 
- color:white;
- text-decoration: underline;
-}
-
-.main-picture{
-  max-width: 200px;
-    height: 300px;
-    display:block;
-    margin: auto;
-}
-
-.banner{
-  margin: 0;
-  padding: 8;
-  background-image: url('img/190905164157-the-realreal-consignment-shop-in-soho.jpg'); 
-  background-size: cover;
-  background-position: center;
-  height: 100vh; 
-  display: flex;
+  color: #fff;
+  display: grid;
+  grid-area: header;
   align-items: center;
-  justify-content: center;
-  color:black;
-  font-family: 'Arial', sans-serif;
-  text-decoration:bold;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  position: relative;
 }
 
-.banner i {
-  margin-right: 8px;
+main {
+  display: grid;
+  grid-area: main;
+  align-items: center;
 }
 
-.banner:hover,
-.bannner:focus {
- color:white;
- text-decoration: underline;
-}
-
-#button-sale-shop-now{
-  background-color: beige; 
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
+li {
+  list-style: none;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width:
 }
 
-#grid{
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4,auto);
-}
-
-.flex-sb{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: baseline;
+img {
   width: 100%;
 }
-.flex-sb article {
-  flex-basis: 50%;
-  margin: 1rem auto;
-  text-align: center;
-}
-.flex-sb article img {
-  width: 80%;
+
+a {
+  text-decoration: none;
 }
 
-.text-design{
-  color:black;
-  cursor: pointer;
-  border: 5px solid beige;
-  border-radius: 1px;
-  text-decoration: solid;
-  display: inline-block;
-}
-
-.lorem{
-  text-decoration: solid;
-  display: inline-block;
-  text-size-adjust: inherit;
-  font-size: 1.2em;
-}
-
-.shop-after-category{
-  text-align: center;
-  text-decoration: solid;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 20px;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.pics-category{
-  justify-content: space-between;
-  align-items: baseline;
-  width: 50%;
-  height: auto;
-  flex-basis: 50%;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.category-text{
-  text-decoration: underline;
-  cursor: pointer;
-  border: 5px solid beige;
-  border-radius: 1px;
-  text-decoration: solid;
-  margin-bottom: 20px;
- 
-}
-.footer-header{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: gray;
+footer{
+  background-color: grey;
   color: #fff;
+  text-align: center;
+  grid-area: footer;
+  display: grid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-socials{
-  padding: 15px;
-  height: fit-content;
-  text-align: center;
-  font-size: 25px;
-  padding: 10px;
-  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.top-main{
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 25px;
-  text-align: center;
-  margin: 20px 0;
-  text-decoration:solid;
+.footer-flex{
+  max-width: 300px;
+  width: 100%;
+  min-width: 200px;
+}
+
+.img {
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+  color: black;
+  font-weight: 1000;
   text-decoration: underline;
+  padding: 2rem 2rem 2rem 2rem;
+  border: 2px solid white;
 }
 
-.category-mypage{
+.main-titles {
   text-align: center;
-  text-decoration: solid;
-  font-size: 20px;
-  margin: 15px;
-  color:black;
-
+  border: 1px solid black;
 }
 
-.product-img{
-  height: auto;
-  border-radius: 8px;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-basis: 50%;
-  margin: 1rem auto;
+#free-shipping {
+  margin: 1rem;
+  padding: 1rem;
+  color: black;
+  text-decoration: underline;
+  align-items: self-end;
+  font-size: medium;
   text-align: center;
-  width: auto;
+  border: 1px outset black;
 }
 
-#produkter{
+.sub-titles{
   text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -274,4 +114,3 @@ nav a:focus {
     grid-template-areas: "header header header" "main main main" "footer footer footer";
   }
 }
-  
