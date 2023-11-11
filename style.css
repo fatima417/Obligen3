@@ -12,10 +12,10 @@ body {
 }
 
 header{
- display: flex;
- color:black;
- text-align: left;
- height: ;
+  background-color: grey;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
 #header-grid{
@@ -32,46 +32,37 @@ header{
   border-bottom-style: initial;
 }
 
-#navigation{
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  gap: 1rem;
-
+#search_bar{
+  margin-top: 10px;
+  text-align: center;
 }
 
-#navigation ul li{
-  list-style: none;
-
+#search_bar input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-
-#icon-navigation{
-
-}
-
-.text{
-
-}
-
-#icons{
-  height: 32px;
-  width: 32px;
-}
-
 
 .container{
 text-align: right;
 font-size: 30px;
 display: flex;
 flex-direction: column;
-
-#icon-navigation{
-  grid-area: icon-navigation;
+font-size: 24px;
 }
 
+.shipping-title{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+  text-decoration:
+}
 
+nav{
+margin-top: 10px;
 }
 
 nav ul{
@@ -80,6 +71,10 @@ list-style: none;
 margin: 0;
 padding: 0;
 justify-content: space-around;
+}
+
+nav li {
+  margin: 0 15px;
 }
 
 nav a{
@@ -94,14 +89,8 @@ nav a{
 
 nav a:hover,
 nav a:focus { 
- color:blueviolet;
+ color:white;
  text-decoration: underline;
-}
-
-
- 
-#search_bar{
-
 }
 
 
@@ -131,6 +120,75 @@ nav a:focus {
   padding: 10px;
   background-image: url(img/54448fdfe921670193384716a3f7b6eebeacd0e1-1080x720.jpg);
 }
+
+.banner{
+  margin: 0;
+  padding: 8;
+  background-image: url('img/190905164157-the-realreal-consignment-shop-in-soho.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  font-family: 'Arial', sans-serif;
+  text-decoration:bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.banner i {
+  margin-right: 8px;
+}
+
+.banner:hover,
+.bannner:focus {
+ color:white;
+ text-decoration: underline;
+}
+
+#button-sale-shop-now{
+  background-color: beige; /
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:
+}
+
+*{
+  box-sizing: border-box;
+}
+
+#grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,auto);
+}
+
+.flex-sb{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.flex-sb article {
+  flex-basis: 50%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.flex-sb article img {
+  width: 80%;
+}
+
 
 .shoes-picture{
   margin: 20px;
