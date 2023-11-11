@@ -152,6 +152,7 @@ nav a:focus {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: baseline;
+  width: 100%;
 }
 .flex-sb article {
   flex-basis: 50%;
@@ -197,6 +198,8 @@ nav a:focus {
   margin: 1rem auto;
   text-align: center;
   width: 80%;
+  width: 35%;
+  height: 50%;
 }
 
 .category-text{
