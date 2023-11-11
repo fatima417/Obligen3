@@ -3,37 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <link href="css/font/css/fontawesome.css" rel="stylesheet">
-        <link href="css/font/css/brands.css" rel="stylesheet">
-        <link href="css/font/css/solid.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/f0cec0541e.js" crossorigin="anonymous"></script>
-        <style media="all" id="fa-v4-font-face"></style>
-        <style media="all" id="fa-v5-font-face"></style>
-        <style media="all" id="fa-v4-shims"></style>
-        <style media="all" id="fa-v4-main"></style>
-        <title>produktside</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Forside</title>
     </head>
     <body>
-        <header>
-         <h1 class="logo"><a href="index.html">Level shoes</a></h1>
-         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produkt.html">Menn</a></li>
-                <li><a href="produkt.html">Women</a></li>
-                <li><a href="leveranseside.html">My page</a></li>
-            </ul>
-         </nav>
-            <div class="container">
-                <i class="fa-solid fa-heart"></i> 
-                <i class="fa-solid fa-user"></i>  
-                <i class="fa-solid fa-cart-shopping"></i> 
-            </div>
-        <nav id="search_bar"> 
-            <input type="text" placeholder="search"> 
-        </nav>
-        </header>
+        <div id="grid-container">
+            <header>
+                <nav class="flex">
+                    <a id="logo" href="index.html">LEVEL SHOES</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produkt.html">Menn</a></li>
+                        <li><a href="produkt.html">Women</a></li>
+                        <li><a href="leveranseside.html">My page</a></li>
+                    </ul>
+                </nav>
+                <section class="flex">
+                    <h2 id="free-shipping">Free shipping on orders over 1000kr<i class="fa-solid fa-truck-fast"></i></h2>  
+                </section>
+            </header>
          <main>
           <div>
             <h2 id="produkter">Produkter</h2>
@@ -56,19 +44,24 @@
                 </section>
             </div>
           </main>
-            <footer class="footer-header">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-plus"> ABOUT US</i>
-                        <i class="fa-solid fa-plus"> Customer service</i>
-                        
-                    </li>
-                </ul>
-                <ul class="footer-socials">
-                    <li><i class="fa-solid fa-arrow-down"></i></li>
-                    <li><a href="https://www.instagram.com/"> Instagram</a></li>
-                    <li><a href="https://www.facebook.com/"> Facebook</a></li>
-                </ul>
-        </footer>
-    </body>
+          <footer>
+            <section class="flex">
+                <article>
+                    <h3>ABOUT US</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a hendrerit justo, at commodo orci. Sed sit amet purus quis ante tristique consequat et vitae erat. Curabitur id velit quis ligula dapibus facilisis. Integer ut dolor mauris.</p>
+                </article>
+                <article>
+                    <h3>CUSTOMER SERVICE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a hendrerit justo, at commodo orci. Sed sit amet purus quis ante tristique consequat et vitae erat. Curabitur id velit quis ligula dapibus facilisis. Integer ut dolor mauris.</p>
+                </article>
+                <article>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </article>
+            </section>
+         </footer>
+    </div>
+</body>
 </html>
