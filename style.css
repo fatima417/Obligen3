@@ -18,20 +18,6 @@ header{
     text-align: center;
 }
 
-#header-grid{
-  z-index: 10;
-  background-image: linear-gradient(to right, #ffffff, #e9e9e9);
-  position: sticky;
-  top: 0;
-  display: grid;
-  gap: 1rem;
-  grid-template-areas: "site-logo main-navigation";
-  border-bottom: transparent;
-  box-shadow: 0px 5px 15px rgb(202, 201, 201);
-  border-bottom-width: initial;
-  border-bottom-style: initial;
-}
-
 #search_bar{
   margin-top: 10px;
   text-align: center;
@@ -45,11 +31,18 @@ header{
 }
 
 .container{
-text-align: right;
+text-align: left;
 font-size: 30px;
 display: flex;
 flex-direction: column;
-font-size: 24px;
+font-size: 22px;
+flex-flow: row wrap;
+justify-content: space-between;
+align-items: baseline;
+flex-basis: 50%;
+margin: 1rem auto;
+text-align: center;
+width: 15%;
 }
 
 .shipping-title{
@@ -58,7 +51,7 @@ font-size: 24px;
   font-size: 24px;
   text-align: center;
   margin: 20px 0;
-  text-decoration:
+  text-decoration:solid;
 }
 
 nav{
@@ -79,7 +72,8 @@ nav li {
 
 nav a{
   color:black;
-  padding: 0.5em;
+  padding: 1.5em;
+  width: 45%;
   text-decoration: solid;
   text-transform: uppercase;
   text-shadow: #fff;
@@ -93,18 +87,6 @@ nav a:focus {
  text-decoration: underline;
 }
 
-
-
-.shipping-title{
-
-}
-
-
-
-.intro{
-
-}
-
 .main-picture{
   max-width: 200px;
     height: 300px;
@@ -112,19 +94,10 @@ nav a:focus {
     margin: auto;
 }
 
-.banner-text{
-  position: absolute;
-  top: 0;
-  color:black;
-  text-align: center;
-  padding: 10px;
-  background-image: url(img/54448fdfe921670193384716a3f7b6eebeacd0e1-1080x720.jpg);
-}
-
 .banner{
   margin: 0;
   padding: 8;
-  background-image: url('img/190905164157-the-realreal-consignment-shop-in-soho.jpg'); /* Replace with your image path */
+  background-image: url('img/190905164157-the-realreal-consignment-shop-in-soho.jpg'); 
   background-size: cover;
   background-position: center;
   height: 100vh; 
@@ -153,7 +126,7 @@ nav a:focus {
 }
 
 #button-sale-shop-now{
-  background-color: beige; /
+  background-color: beige; 
   border: none;
   color: black;
   padding: 15px 32px;
@@ -189,21 +162,151 @@ nav a:focus {
   width: 80%;
 }
 
-
-.shoes-picture{
-  margin: 20px;
-  
+.text-design{
+  color:black;
+  cursor: pointer;
+  border: 5px solid beige;
+  border-radius: 1px;
+  text-decoration: solid;
+  display: inline-block;
 }
 
-.btn-group{
-
+.lorem{
+  text-decoration: solid;
+  display: inline-block;
+  text-size-adjust: inherit;
+  font-size: 1.2em;
 }
 
-.footer{
+.shop-after-category{
+  text-align: center;
+  text-decoration: solid;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+}
 
+.pics-category{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-basis: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  width: 80%;
+}
+
+.category-text{
+  text-decoration: underline;
+  cursor: pointer;
+  border: 5px solid beige;
+  border-radius: 1px;
+  text-decoration: solid;
+  margin-bottom: 20px;
+ 
+}
+.footer-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: gray;
+  color: #fff;
 }
 
 .footer-socials{
-
+  padding: 15px;
+  height: fit-content;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  
 }
- 
+
+.top-main{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0;
+  text-decoration:solid;
+  text-decoration: underline;
+}
+
+.category-mypage{
+  text-align: center;
+  text-decoration: solid;
+  font-size: 20px;
+  margin: 25px 0;
+  color:black;
+}
+
+.product-img{
+  height: auto;
+  border-radius: 8px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-basis: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  width: auto;
+}
+
+#produkter{
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .banner {
+    font-size: 18px;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  .main-picture {
+    max-width: 100%;
+  }
+
+  .flex-sb article {
+    flex-basis: 100%;
+    margin: 1rem auto;
+  }
+
+  .pics-category,
+  .product-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for screens up to 480px wide */
+  body {
+    font-size: 12px;
+  }
+
+  .banner {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
+
